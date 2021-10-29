@@ -16,16 +16,28 @@
 <?php
 const PATH = 'uploads/';
 foreach (glob(PATH . '*') as $filename): ?>
-<img src="<?= $filename ?>" alt="">
+<div class="image">
+    <img src="<?= $filename ?>" alt="">
+    <form action="delete.php" method="post">
+        <input type="hidden" value="<?= $filename ?>" name="delete_file">
+        <button name="delete">Delete</button>
+    </form>
+</div>
 <?php endforeach; ?>
+
 </body>
 </html>
 
 <style>
-    img {
+    .image {
+        display: inline-block;
         margin: 10px;
+    }
+    img {
+        display: block;
         width: 250px;
         height: 250px;
         object-fit: cover;
+        margin-bottom: 10px;
     }
 </style>
