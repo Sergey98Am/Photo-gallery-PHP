@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['upload-image'])) {
     $file = $_FILES['file'];
     $file_name = $_FILES['file']['name'];
     $file_tmp_name = $_FILES['file']['tmp_name'];
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
                 echo "Your file is too big";
             }
         } else {
-           echo "There was an error uploading your file!";
+            echo "There was an error uploading your file!";
         }
     } else {
         echo "You cannot upload files of this type!";
