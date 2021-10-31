@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 <form action="upload-image.php" method="post" enctype="multipart/form-data" class="upload-form">
@@ -77,6 +78,8 @@ foreach ($images as $image): ?>
     </div>
 <?php endforeach; ?>
 
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 
