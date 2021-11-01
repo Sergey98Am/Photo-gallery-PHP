@@ -12,7 +12,6 @@ if (isset($_POST['upload-image'])) {
     $file_actual_ext = strtolower(end($file_ext)); // png
 
     $allowed = array('jpg', 'jpeg', 'png');
-//    var_dump($file);
 
     if (in_array($file_actual_ext, $allowed)) {
         if ($file_error === 0) {
