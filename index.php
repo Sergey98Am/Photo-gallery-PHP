@@ -43,10 +43,31 @@
         $dirs = array_filter(glob(PATH . '*'), 'is_dir');
         foreach ($dirs as $folder):?>
             <div class="folder">
-                <button type="button" class="open-folder btn btn-primary" data-folder_name="<?= basename($folder) ?>"
-                        data-folder="<?= $folder ?>">
-                    <?= basename($folder) ?>
-                </button>
+                <div class="folder">
+                    <p style="margin: 0"><?= basename($folder) ?></p>
+                    <?php $folder_images = array_filter(glob("$folder/*"), 'is_file');
+                    foreach ($folder_images as $image): ?>
+                        <div class="image">
+                            <img class="nested" src="<?= $image ?>" alt="">
+                            <form action="move-image.php" method="post">
+                                <input type="hidden" value="<?= $image ?>" name="file_path">
+                                <select name="destination_file_path" id="">
+                                    <option value="">Choose folder</option>
+                                    <?php
+                                    $dirs = array_filter(glob(PATH . '*'), 'is_dir');
+                                    foreach ($dirs as $folder):?>
+                                        <option value="<?= "$folder" . "/" . basename($image) ?>"><?= basename($folder) ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                                <button name="move">Move</button>
+                            </form>
+                            <form action="delete.php" method="post">
+                                <input type="hidden" value="<?= $image ?>" name="delete_file">
+                                <button class="delete-button" name="delete">Delete</button>
+                            </form>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
             </div>
         <?php endforeach; ?>
     </div>
