@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e54d5b6-d90c-4cb7-9f07-28a6134d9062" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete-image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/move-image.php" beforeDir="false" afterPath="$PROJECT_DIR$/move-image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload-folder.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload-folder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload-image.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload-image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/fds/617edcdf885f94.50629911.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/fds/617fc369b404b2.86605419.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/fds/617fc3c5bab731.10368681.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/fds/617fc47a4c2920.76567120.jpeg" beforeDir="false" />
-    </list>
+    <list default="true" id="8e54d5b6-d90c-4cb7-9f07-28a6134d9062" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
