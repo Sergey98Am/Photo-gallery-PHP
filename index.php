@@ -29,7 +29,7 @@
                     const PATH = 'uploads/';
                     $images = array_filter(glob(PATH . '*'), 'is_file');
                     foreach ($images as $image): ?>
-                        <div class="col-3">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                             <div class="image">
                                 <img class="image-in-upload" src="<?= $image ?>" alt="">
                                 <form action="move-image.php" method="post">
@@ -64,7 +64,7 @@
                                 <?php
                                 $folder_images = array_filter(glob("$folder/*"), 'is_file');
                                 foreach ($folder_images as $image): ?>
-                                    <div class="col-3">
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                                         <div class="image nested-image">
                                             <img class="nested" src="<?= $image ?>" alt="">
                                             <form action="move-image.php" method="post">
